@@ -10,6 +10,7 @@ provider:
   timeout: 120
   environment:
     DYNAMODB_TABLE: qiitaTable
+  region: ap-northeast-1
   iam:
     role:
       statements:
@@ -22,7 +23,7 @@ provider:
             - dynamodb:UpdateItem
             - dynamodb:DeleteItem
           # Resource: arn:aws:dynamodb:${opt:stage, self:provider.stage}:*:table/${self:provider.environment.DYNAMODB_TABLE}
-          Resource: arn:aws:dynamodb:us-east-1:*:table/qiitaTable
+          Resource: arn:aws:dynamodb:ap-northeast-1:*:table/qiitaTable
 
 functions:
   qiita:

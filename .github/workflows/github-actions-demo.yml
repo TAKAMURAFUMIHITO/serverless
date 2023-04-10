@@ -22,7 +22,7 @@ jobs:
         run: npm install -g serverless
 
       - name: deploy
-        run: serverless deploy --config ../../../serverless.yml
+        run: serverless deploy --aws-config sandbox
 # on: [push]
 # jobs:
 #   Explore-GitHub-Actions:
