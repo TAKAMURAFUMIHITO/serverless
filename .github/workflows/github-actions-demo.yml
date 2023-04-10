@@ -20,6 +20,12 @@ jobs:
 
       - name: install serverless
         run: npm install -g serverless
+
+      - name: Install Dependencies
+        run: |
+          npm install -g yarn
+          yarn
+
       - name: install plugin
         run: serverless plugin install -n serverless-webpack
 
