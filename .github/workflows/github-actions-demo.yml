@@ -20,6 +20,8 @@ jobs:
 
       - name: install serverless
         run: npm install -g serverless
+      - name: install plugin
+        run: serverless plugin install -n serverless-webpack
 
       - name: deploy
         run: serverless deploy --aws-config sandbox
