@@ -13,7 +13,7 @@ jobs:
       - name: install serverless
         run: npm install -g serverless
       - name: deploy
-        run: serverless deploy --config ../serverless.yml
+        run: serverless deploy --config ../serverless-sample/serverless.yml
 # on: [push]
 # jobs:
 #   Explore-GitHub-Actions:
