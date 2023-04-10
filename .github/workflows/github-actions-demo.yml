@@ -24,7 +24,7 @@ jobs:
         run: serverless plugin install -n serverless-webpack
 
       - name: deploy
-        run: serverless deploy --aws-config sandbox
+        run: serverless deploy
 # on: [push]
 # jobs:
 #   Explore-GitHub-Actions:
